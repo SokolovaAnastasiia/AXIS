@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel='stylesheet' media='screen and (min-width: 1024px) and (max-width: 2760px)' href='style/1440x900.css' />
+    <script src="js/animation.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+      .forbody {
+        background: #4B4B4B;
+        overflow: hidden;
+        transition: .5s;
+      }
+      .forbody2 {
+        background: black;
+        overflow: hidden;
+        transition: .5s;
+      }
+      .forbody3 {
+        background: white;
+        overflow: hidden;
+        transition: .5s;
+      }
+      @font-face {
+       font-family: 'SuisseIntl-Regular';
+       src: url('fonts/SuisseIntl-Regular.otf');
+       font-weight: normal;
+       font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <body class="forbody"></body>
+    <div class="button1_slide01">
+      Searching for ideas
+    </div>
+    <div id="draggableArea" class="hidden">
+    <div id="draggable" class="gray"><div class="twxt hidden">Black</div></div>
+    </div>
+    <div id="droppable" class="drophere"></div>
+    <div id="droppable2" class="drophere2"></div>
+    <div class="slider_slide02 hidden"></div>
+    <div class="mode_slide02 hidden">Mode</div>
+    <div class="drag_slide02 hidden">Drag</div>
+    <div class="button2_slide03 hidden">
+      Yes
+    </div>
+  </body>
+</html>
