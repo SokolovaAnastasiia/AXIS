@@ -144,6 +144,10 @@
     transition: .5s;
     z-index: 6;
   }
+
+  .button2_slide03 a{
+    text-decoration: none;
+  }
   .button2_slide03:hover {
     border: 2px solid #FFFFFF;
     background: #FFFFFF;

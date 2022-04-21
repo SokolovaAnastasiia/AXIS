@@ -1,0 +1,16 @@
+#skip_or_not__primary_button {
+  margin: 76vh auto 0;
+}
+
+#skip_or_not__secondary_button {
+  margin: 2vh auto 1vh;
+}
+
+@media screen and (max-width: 400px) {
+  #skip_or_not__primary_button {
+    margin: 75vh 1vh 0;
+  }
+  #skip_or_not__secondary_button {
+    margin: 1vh 1vh 1vh;
+  }
+}

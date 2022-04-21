@@ -1,0 +1,100 @@
+@font-face {
+ font-family: 'SuisseIntl-Regular';
+ src: url('../fonts/SuisseIntl-Regular.otf');
+ font-weight: normal;
+ font-style: normal;
+}
+
+/* _____BODY_____ */
+
+body {
+  background-color: black;
+}
+
+.body_white {
+  background-color: white;
+}
+
+/* _____BUTTONS_____ */
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 64px;
+  border-radius: 15px;
+  width: fit-content;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  font-family: 'SuisseIntl-Regular';
+  font-size: 18px;
+}
+
+/* Разница между Primary и Secondary кнопками */
+
+.primary_button {
+  background-color: white;
+}
+
+.primary_button:hover {
+  background-color: #CCCCCC;
+}
+
+.primary_button a {
+  color: black;
+}
+
+
+.secondary_button {
+  border: 2px solid #4B4B4B;
+}
+
+.secondary_button:hover {
+  border: 2px solid #FFFFFF;
+}
+
+.secondary_button a {
+  color: white;
+}
+
+/* Белые версии кнопок */
+
+.primary_button_white {
+  background-color: black;
+}
+
+.primary_button_white:hover {
+  background-color: #4B4B4B;
+}
+
+.primary_button_white a {
+  color: white;
+}
+
+.secondary_button_white {
+  border: 2px solid #CCCCCC;
+}
+
+.secondary_button_white:hover {
+  border: 2px solid #000000;
+}
+
+.secondary_button_white a {
+  color: black;
+}
+
+/* Адаптив кнопок*/
+
+@media screen and (max-width: 400px) {
+  .primary_button {
+    width: auto;
+  }
+  .secondary_button {
+    width: auto;
+  }
+}
