@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AXIS</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <script src=""></script>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/onboarding.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+  <link rel='stylesheet' href='../style/ui-kit.css' />
+  <link rel='stylesheet' href='../style/onboarding.css' />
+
+</head>
+<body>
+  <div class='desktop'>
+    <div class="slider">
+      <div class="slider-item slider-item_selected"></div>
+      <div class="slider-item"></div>
+      <div class="slider-item"></div>
+      <div class="slider-item"></div>
+      <div class="slider-item"></div>
+    </div>
+    <div class="text-button" id='skip'>
+      <a href="#">Skip</a>
+    </div>
+    <div class="onboarding-card">
+      <h2>Expanding your ideas</h2>
+      <p class="text_1">
+        I will help you create an idea or solution when a working dilemma arises.
+      </p>
+      <div class="text-button" id='back'>
+        <a href="#">Back</a>
+      </div>
+      <div class="send-button" id='onboarding-send'></div>
+      <div class="lets-start">
+        <a href="#">Okay. Let’s start</a>
+      </div>
+    </div>
+  </div>
+  <div class="mobile">
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style='background: #015924;'>
+          <h2 class='h2-mobile'>Creating Worlds.</h2>
+          <p class='text_1_mobile'>
+            I will help you create an idea or solution when a working dilemma arises.
+          </p>
+        </div>
+        <div class="swiper-slide" style="background: #00A237;">
+          <h2 class='h2-mobile'>Open questions</h2>
+          <p class='text_1_mobile'>
+            We will talk about your project.<br>There is no right answer on my questions :)
+          </p>
+        </div>
+        <div class="swiper-slide" style="background: #1743B4;">
+          <h2 class='h2-mobile'>Poetic principles</h2>
+          <p class='text_1_mobile'>
+            The game contains ambiguous questions that work with the imagination
+          </p>
+        </div>
+        <div class="swiper-slide" style="background: #595957;">
+          <h2 class='h2-mobile'>20 minutes</h2>
+          <p class='text_1_mobile'>
+            You can complete the game in just 20 minutes.
+          </p>
+        </div>
+        <div class="swiper-slide" style="background: #7FD600;">
+          <h2 class='h2-mobile'>Believe me</h2>
+          <p class='text_1_mobile'>
+            I don't store data. And I don't use them.
+          </p>
+        </div>
+      </div>
+      <!-- Add Scrollbar -->
+      <div class="swiper-scrollbar"></div>
+
+    </div>
+    <div class="send-button-mobile"></div>
+  </div>
+</body>
+</html>

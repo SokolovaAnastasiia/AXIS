@@ -18,6 +18,9 @@ $(document).ready(function(){
     $('body').addClass( "body_white" )
     $( ".primary_button" ).addClass( "primary_button_white" );
     $( ".secondary_button" ).addClass( "secondary_button_white" );
+    $( ".slider-item" ).addClass( "slider_white" );
+
+
   }
   else {
     console.log('Black mode');
