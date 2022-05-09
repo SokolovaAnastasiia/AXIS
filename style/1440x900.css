@@ -1,4 +1,7 @@
 /* _____экран 1_____ */
+.contenier {
+  overflow: hidden;
+}
 .button1_slide01 {
   position: absolute;
   width: 15.625%;
