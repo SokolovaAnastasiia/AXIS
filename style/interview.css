@@ -1,0 +1,52 @@
+h3 {
+  margin: 2vh auto 1vh;
+  color: #4B4B4B;
+}
+
+h2 {
+  margin: 7vh auto 1vh;
+}
+
+.h2-mobile {
+  display: none;
+}
+
+.secondary_button {
+  display: inline-block;
+}
+
+.buttons {
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+
+.yes_no_button {
+  margin-right: 1vw;
+  display: inline-block;
+}
+
+@media screen and (max-width: 400px) {
+  .yes_no_button {
+    display: flex;
+  }
+  h2 {
+    margin: 5vh 0 1vh;
+  }
+  .buttons {
+    display: block;
+    position: absolute;
+    width: 95vw;
+    bottom: -3vh;
+  }
+  .caption {
+    margin: 1vh 0 1vh;
+  }
+  .slider {
+    margin-top: 0.5vh;
+  }
+  .br {
+    display: revert;
+  }
+}
