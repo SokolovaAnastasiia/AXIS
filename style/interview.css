@@ -5,6 +5,8 @@ h3 {
 
 h2 {
   margin: 7vh auto 1vh;
+  max-width: 689px;
+  text-align: center;
 }
 
 .h2-mobile {
@@ -27,12 +29,24 @@ h2 {
   display: inline-block;
 }
 
+.send-button {
+  display: none;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 2vh;
+  right: 5vw;
+}
+
 @media screen and (max-width: 400px) {
+  .send-button {
+    display: block;
+  }
   .yes_no_button {
     display: flex;
   }
   h2 {
     margin: 5vh 0 1vh;
+    text-align: left;
   }
   .buttons {
     display: block;
@@ -41,7 +55,7 @@ h2 {
     bottom: -3vh;
   }
   .caption {
-    margin: 1vh 0 1vh;
+    margin: 1vh 1vw 1vh;
   }
   .slider {
     margin-top: 0.5vh;
@@ -49,4 +63,38 @@ h2 {
   .br {
     display: revert;
   }
+  input[type=textarea] {
+    display: block;
+    position: absolute;
+    width: 70%;
+    bottom: 2vh;
+    padding: 17.5px 32px;
+    max-width: 15ch;
+    min-width: 15ch;
+    text-align: left;
+  }
+  input:not(:placeholder-shown) {
+    background-color: #CCCCCC;
+    outline: none;
+    border-color: #CCCCCC;
+  }
+
+  .input-white:not(:placeholder-shown) {
+    background-color: black;
+  }
+  #interview-2-yes-no-button {
+    display: none !important;
+  }
+
+}
+
+input[type=textarea] {
+  display: block;
+  margin: 5vh auto 0vh;
+}
+
+#interview-2-yes-no-button {
+  /* display: block; */
+  display: none;
+  margin: 20vh auto 0vh;
 }

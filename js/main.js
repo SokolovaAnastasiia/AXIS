@@ -22,6 +22,7 @@ $(document).ready(function(){
     $( 'h2' ).addClass( "h2_white" );
     $( '.yes_no_button' ).addClass( "yes_no_button_white" );
     $( '.caption' ).addClass( "caption_white" );
+    $( 'input' ).addClass( "input-white" );
 
 
   }

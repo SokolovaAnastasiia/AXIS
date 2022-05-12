@@ -97,6 +97,53 @@ h3 {
 }
 
 
+input[type=textarea], textarea {
+  outline: none;
+  background:none;
+  border: 2px solid #4B4B4B;
+  padding: 8.5px 32px;
+  color: white;
+  border-radius: 41px;
+  min-width: 13ch;
+}
+
+input[type=textarea]
+{
+
+  font-family: 'SuisseIntl-Regular';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.input-white {
+  border: 2px solid #CCCCCC !important;
+  color: black;
+  caret-color: #CCCCCC;
+}
+
+
+input:not(:placeholder-shown) {
+  outline: none;
+  border-color: white;
+  color: black;
+  background-color: white;
+}
+
+.input-white:not(:placeholder-shown) {
+  border-color: black !important;
+  outline: none;
+  color: white;
+  background-color: black;
+}
+
+
+
+
+
 /* _____BUTTON_____ */
 
 .button {
@@ -277,7 +324,7 @@ h3 {
   background-image: url('../images/send-hover.svg');
 }
 
-.send-button:disabled {
+.send-button-disabled {
   background-image: url('../images/send-disable.svg');
 }
 
@@ -288,6 +335,40 @@ h3 {
   cursor: pointer;
   user-select: none;
 }
+
+/* _____NEXT-BUTTON_____ */
+.next-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 64px;
+  gap: 10px;
+  background: #4B4B4B;
+  border-radius: 15px;
+}
+
+.next-button a {
+
+  /* Body */
+  text-decoration: none;
+
+  font-family: 'SuisseIntl-Regular';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 
 /* _____SLIDER_____ */
 
