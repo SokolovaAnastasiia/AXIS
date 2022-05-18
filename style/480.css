@@ -1,0 +1,339 @@
+.contenier_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.contenier {
+  width: 400px;
+  height: 300px;
+}
+.button1_slide01 {
+  width: 225px;
+  height: 54px;
+  background: #4B4B4B;
+  border-radius: 15px;
+  border: 2px solid #000000;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-family: 'SuisseIntl-Regular';
+  transition: .5s;
+  z-index: 6;
+}
+.button1_slide01:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #4B4B4B;
+  transition: .1s;
+}
+
+/* _____экран 2_____ */
+#droppable { width: 150px; height: 150px; }
+
+#droppable2 { width: 150px; height: 150px; }
+
+.drophere {
+  position: absolute;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  background-color: gray;
+}
+
+.drophere2 {
+  position: absolute;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  margin-left: 200px;
+  margin-top: 30px;
+  background-color: gray;
+}
+
+#draggableArea {
+  position: absolute;
+  width: 134px;
+  margin-left: 131.5px;
+  margin-top: 115px;
+  height: 69.4px;
+  border-radius: 90px;
+  transition: .5s;
+  z-index: 5;
+}
+#draggable {
+  width: 69.4px;
+  height: 69.4px;
+  left: 32px;
+  /* background-color: #3B3B3B; */
+  /* padding: 18px; */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 5;
+}
+.left {
+  margin-left: -30px;
+}
+.right {
+  margin-left: 30px;
+}
+  .hidden {
+    opacity: 0;
+  }
+  .blocker {
+    display: none;
+  }
+  .twxt {
+    position: absolute;
+    display: none;
+    left: 12px;
+    top: 265px;
+    width: 150px;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+    font-family: 'SuisseIntl-Regular';
+    transition: .5s;
+    z-index: -14;
+  }
+  .slider_slide02 {
+    display: flex;
+    width: 142.63px;
+    height: 80.43px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    background: #111111;
+    border-radius: 134px;
+    transition: .5s;
+    z-index: -5;
+  }
+  .mode_area {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    width: 100%;
+    height: 21px;
+    overflow: hidden;
+  }
+  .mode_slide02 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 126px;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #111111;
+    font-family: 'SuisseIntl-Regular';
+    transition: .5s;
+    z-index: 4;
+  }
+  .mode_area2_mobile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34vh;
+    width: 100%;
+    height: 56vh;
+    overflow: hidden;
+    z-index: -10;
+  }
+  .drag_slide02_mobile {
+    height: 21px;
+    width: 170px;
+    font-size: 20px;
+    color: #111111;
+    text-align: center;
+    font-family: 'SuisseIntl-Regular';
+    transition: .5s;
+    z-index: 4;
+  }
+  .drag_slide02 {
+    height: 21px;
+    width: 126px;
+    font-size: 18px;
+    color: #4B4B4B;
+    text-align: center;
+    font-family: 'SuisseIntl-Regular';
+    transition: .5s;
+    z-index: 4;
+  }
+  .mode_area3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .back {
+    z-index: -10;
+  }
+  .button2_slide03 {
+    display: none;
+    position: absolute;
+    left: 100px;
+    width: 89px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+    background: #000000;
+    border-radius: 15px;
+    border: 2px solid #4B4B4B;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'SuisseIntl-Regular';
+    transition: .5s;
+    opacity: 0;
+    z-index: 6;
+  }
+
+  .button2_slide03 a{
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+    width: 100%;
+    height: 21px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+  }
+
+  .button2_slide03:hover {
+    border: 2px solid #FFFFFF;
+    background: #FFFFFF;
+    color: #000000;
+    transition: .1s;
+  }
+  .idea_fix {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .button_left {
+    width: 50%;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: 'SuisseIntl-Regular';
+    transition: .5s;
+    z-index: 6;
+  }
+  .button_right {
+    width: 50%;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: 'SuisseIntl-Regular';
+    transition: .5s;
+    z-index: 6;
+  }
+  .flex {
+    display: flex;
+  }
+  .button_area_mobile4 {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 40px;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+  }
+  .button_mobile {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 89.74%;
+    height: 60px;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 15px;
+    font-family: 'SuisseIntl-Regular';
+    transition: .5s;
+    z-index: 4;
+  }
+  .white {
+    background: #FFFFFF;
+    /* transition: .5s; */
+  }
+  .white_text {
+    color: #FFFFFF;
+    /* transition: .5s; */
+  }
+  .white_text:hover {
+    color: #000000;
+    /* transition: .5s; */
+  }
+  .white_button {
+    background: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    color: #000000;
+    transition: .5s;
+  }
+  .white_button:hover {
+    background: #000000;
+    border: 2px solid #000000;
+    color: #FFFFFF;
+    transition: .1s;
+  }
+
+  .black {
+    background-color: #000000;
+  }
+  .black_text {
+    color: #000000;
+    /* transition: .5s; */
+  }
+  .black_text:hover {
+    color: #FFFFFF;
+    /* transition: .5s; */
+  }
+  .gray {
+    background-color: #3B3B3B;
+  }
