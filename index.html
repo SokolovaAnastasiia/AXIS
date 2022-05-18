@@ -6,7 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel='stylesheet' media='screen and (min-width: 200px) and (max-width: 2760px)' href='style/1440x900.css' />
+    <link rel='stylesheet' media='screen and (min-width: 480px) and (max-width: 2760px)' href='style/1440x900.css' />
+    <link rel='stylesheet' media='screen and (min-width: 100px) and (max-width: 480px)' href='style/480.css' />
     <script src="js/animation.js"></script>
     <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,25 +34,48 @@
        font-weight: normal;
        font-style: normal;
       }
+
     </style>
   </head>
   <body>
     <body class="forbody"></body>
+    <div class="contenier_main">
     <div class="contenier">
-    <div class="button1_slide01">
-      Searching for ideas
-    </div>
     <div id="draggableArea" class="hidden">
     <div id="draggable" class="gray"><div class="twxt hidden">Black</div></div>
     </div>
     <div id="droppable" class="drophere"></div>
     <div id="droppable2" class="drophere2"></div>
     <div class="slider_slide02 hidden"></div>
-    <div class="mode_slide02 hidden">Mode</div>
-    <div class="drag_slide02 hidden">Drag</div>
     <div class="button2_slide03 hidden">
       <a href="pages/skip_or_not.html">Yes</a>
     </div>
     </div>
+    </div>
+    <div class="mode_area">
+      <div class="mode_slide02 hidden">Mode</div>
+    </div>
+    <div class="mode_area2">
+      <div class="drag_slide02 hidden">Drag</div>
+    </div>
+    <div class="mode_area2_mobile">
+      <div class="drag_slide02_mobile hidden">Click</div>
+    </div>
+    <div class="mode_area3">
+      <div class="button1_slide01">
+        Searching for ideas
+      </div>
+    </div>
+    <div class="idea_fix blocker">
+      <div class="button_left"></div>
+      <div class="button_right"></div>
+    </div>
+    <div class="button_area_mobile4 hidden">
+      <div class="button_mobile">
+        <a href="pages/skip_or_not.html">Continue in white</a>
+      </div>
+    </div>
+
+
   </body>
 </html>
