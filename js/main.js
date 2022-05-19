@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   // Задать цвет интерфейса
-  $( ".button2_slide03" ).click(function() {
-    if ($( ".button2_slide03" ).hasClass( "white_button" )) {
+  $( ".button2_slide03, .button_mobile" ).click(function() {
+    if ($( ".button2_slide03, .button_mobile" ).hasClass( "white_button" )) {
       sessionStorage.setItem("mode","white");
     }
     else {
