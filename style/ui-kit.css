@@ -208,6 +208,23 @@ h3 {
   background: #C0E52B;
 }
 
+.white_chip {
+  border-color: #CCCCCC;
+}
+
+.white_chip:hover {
+  border-color: black;
+}
+
+.white_chip > .chip-text{
+  color: black;
+}
+
+.white_chip > .icon{
+  background-image: url('../images/black-plus.svg');
+
+}
+
 .chip-1 {
   background: #7FD600;
 }

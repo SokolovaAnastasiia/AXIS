@@ -32,6 +32,8 @@ $(document).ready(function(){
     $( '.area_arrow_1_whitemode' ).removeClass( "hidden" );
     $( '.name_button' ).addClass( "white_button" );
     $( '.button_mobile' ).addClass( "black_button_mobile" );
+    $( '.chip' ).addClass( "white_chip" );
+    $( '.sub-h2' ).addClass( "sub-h2_white" );
 
 
   }
