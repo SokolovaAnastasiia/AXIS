@@ -31,7 +31,6 @@ $(document).ready(function(){
     $( '.area_arrow_1_whitemode, .area_arrow_2_whitemode' ).removeClass( "none" );
     $( '.area_arrow_1_whitemode' ).removeClass( "hidden" );
 
-
   }
   else {
     console.log('Black mode');
