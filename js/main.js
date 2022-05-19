@@ -23,6 +23,13 @@ $(document).ready(function(){
     $( '.yes_no_button' ).addClass( "yes_no_button_white" );
     $( '.caption' ).addClass( "caption_white" );
     $( 'input' ).addClass( "input-white" );
+    $( '.forbody2' ).addClass( "forbody3" );
+    $( '.Dialogue_text1_white' ).addClass( "black_text" );
+    $( '.Dialogue_text2_gray' ).addClass( "gray_text" );
+    $( '.area_arrow_1, .area_arrow_2' ).addClass( "hidden" );
+    $( '.area_arrow_1, .area_arrow_2' ).addClass( "none" );
+    $( '.area_arrow_1_whitemode, .area_arrow_2_whitemode' ).removeClass( "none" );
+    $( '.area_arrow_1_whitemode' ).removeClass( "hidden" );
 
 
   }
