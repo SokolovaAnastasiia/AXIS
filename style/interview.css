@@ -9,6 +9,11 @@ h2 {
   text-align: center;
 }
 
+.sub-h2 {
+  margin-top: 0;
+  color: #4B4B4B;
+}
+
 .h2-mobile {
   display: none;
 }
@@ -59,6 +64,12 @@ h2 {
 
 
 #interview-3-yes-no-button {
+  display: block;
+  /* display: none; */
+  margin: 20vh auto 0vh;
+}
+
+#interview-4-yes-no-button {
   display: block;
   /* display: none; */
   margin: 20vh auto 0vh;
