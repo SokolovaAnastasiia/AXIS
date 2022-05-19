@@ -311,9 +311,7 @@
     /* transition: .5s; */
   }
   .white_button {
-    background: #FFFFFF;
-    border: 2px solid #CCCCCC;
-    color: #000000;
+    color: #FFFFFF;
     transition: .5s;
   }
   .white_button:hover {
