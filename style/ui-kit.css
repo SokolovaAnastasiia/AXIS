@@ -144,6 +144,123 @@ h3 {
   background-color: black;
 }
 
+/* _____CHIPS_____ */
+.chip {
+  border: 2px solid #4B4B4B;
+  border-radius: 41px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  margin-left: 4px;
+  margin-right: 1px;
+  width: fit-content;
+  padding: 15px 32px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: white;
+}
+
+.chip .icon {
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/white-plus.svg');
+}
+
+.chip-text {
+  font-family: 'SuisseIntl-Regular';
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.chosen-chip {
+  border: none;
+  padding: 17px 34px;
+}
+
+.chosen-icon {
+  background-repeat: no-repeat;
+  background-image: url('../images/dark-checked.svg') !important;
+  width: 18px;
+  height: 18px;
+}
+
+.chosen-chip .chip-text{
+  color: black;
+}
+
+.chip-0 {
+  background: #C0E52B;
+}
+
+.chip-1 {
+  background: #7FD600;
+}
+
+.chip-2 {
+  background: #F5B2E7;
+}
+
+.chip-3 {
+  background: #15874A;
+
+}
+
+.chip-4 {
+  background: #015924;
+
+}
+
+.chip-5 {
+  background: #1743B4;
+
+}
+
+.chip-6 {
+  background: #3B3B3B;
+
+}
+
+.chip-7 {
+  background: #636A00;
+
+}
+
+.chip-8 {
+  background: #00A237;
+
+}
+
+.chip-9 {
+  background: #15874A;
+
+}
+
+.chip-10 {
+  background: #578211;
+
+}
+
+.chip-11 {
+  background: #595957;
+
+}
+
 
 
 

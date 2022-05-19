@@ -50,6 +50,29 @@ h2 {
   display: none;
 }
 
+
+#interview-2-yes-no-button {
+  /* display: block; */
+  display: none;
+  margin: 20vh auto 0vh;
+}
+
+
+#interview-3-yes-no-button {
+  display: block;
+  /* display: none; */
+  margin: 20vh auto 0vh;
+}
+
+
+.chips {
+  display: flex;
+  justify-content: center;
+  max-width: 850px;
+  margin: 5vh auto;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 400px) {
   .messager-box {
     display: flex;
@@ -110,12 +133,4 @@ h2 {
     display: none !important;
   }
 
-}
-
-
-
-#interview-2-yes-no-button {
-  /* display: block; */
-  display: none;
-  margin: 20vh auto 0vh;
 }
