@@ -212,3 +212,35 @@ $(document).ready(function(){
                       .addClass( "white_text" )
               });
             });
+
+            $(document).ready(function(){
+                  $(".arrow1").click(function(){
+                    $(".Dialogue_text2_gray").removeClass("hidden");
+                    setTimeout(function(){
+                      $(".area_arrow_2").removeClass("hidden");
+                    },10)
+                    setTimeout(function(){
+                      $(".area_arrow_2").addClass("front");
+                    },20)
+                    setTimeout(function(){
+                      $(".area_arrow_1").addClass("hidden");
+                    },30)
+
+                  });
+                });
+
+            $(document).ready(function(){
+                  $(".arrow1_whitemode").click(function(){
+                    $(".Dialogue_text2_gray").removeClass("hidden");
+                    setTimeout(function(){
+                      $(".area_arrow_2_whitemode").removeClass("hidden");
+                    },10)
+                    setTimeout(function(){
+                      $(".area_arrow_2_whitemode").addClass("front");
+                    },20)
+                    setTimeout(function(){
+                      $(".area_arrow_1_whitemode").addClass("hidden");
+                    },30)
+
+                  });
+                });
