@@ -244,3 +244,19 @@ $(document).ready(function(){
 
                   });
                 });
+
+            $(document).ready(function(){
+                  $("input").click(function(){
+                    $(".nicknames").addClass("hidden");
+                    setTimeout(function(){
+                      $(".name_button, .button_area_mobile4").removeClass("hidden");
+                    },500)
+                    setTimeout(function(){
+                      $(".area_arrow_2_whitemode").addClass("front");
+                    },20)
+                    setTimeout(function(){
+                      $(".area_arrow_1_whitemode").addClass("hidden");
+                    },30)
+
+                  });
+                });
