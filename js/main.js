@@ -19,7 +19,7 @@ $(document).ready(function(){
     $( ".primary_button" ).addClass( "primary_button_white" );
     $( ".secondary_button" ).addClass( "secondary_button_white" );
     $( ".slider-item" ).addClass( "slider_white" );
-    $( 'h2' ).addClass( "h2_white" );
+    $( 'h2' ).not('.onboarding').addClass( "h2_white" );
     $( '.yes_no_button' ).addClass( "yes_no_button_white" );
     $( '.caption' ).addClass( "caption_white" );
     $( 'input' ).addClass( "input-white" );

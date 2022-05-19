@@ -9,10 +9,16 @@
   background: #015924;
 }
 
-
+.h2-abother {
+  color: black !important;
+}
 
 .onboarding-card .text_1 {
   max-width: 438px;
+}
+
+.onboarding {
+  color: black !important;
 }
 
 
