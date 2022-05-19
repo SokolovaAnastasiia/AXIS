@@ -22,7 +22,7 @@ $(document).ready(function(){
     $( 'h2' ).addClass( "h2_white" );
     $( '.yes_no_button' ).addClass( "yes_no_button_white" );
     $( '.caption' ).addClass( "caption_white" );
-    $( 'input' ).addClass( "input-white" );
+    $( '.desktop-input' ).addClass( "input-white" );
     $( '.forbody2' ).addClass( "forbody3" );
     $( '.Dialogue_text1_white' ).addClass( "black_text" );
     $( '.Dialogue_text2_gray' ).addClass( "gray_text" );

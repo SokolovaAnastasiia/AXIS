@@ -5,8 +5,11 @@ $(document).ready(function(){
 
   function resizeInput() {
     this.style.width = this.value.length + "ch";
-    if($('#interview2-yes_no_button').val()) {
+    if($('.desktop-input').val()) {
       $('#interview-2-yes-no-button').css("display", "block");
+    }
+    else {
+      $('#interview-2-yes-no-button').css("display", "none");
     }
   }
 

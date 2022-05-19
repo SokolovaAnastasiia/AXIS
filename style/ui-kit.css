@@ -96,8 +96,11 @@ h3 {
   display: none;
 }
 
+.message-input {
 
-input[type=textarea], textarea {
+}
+
+.desktop-input {
   outline: none;
   background:none;
   border: 2px solid #4B4B4B;
@@ -105,10 +108,11 @@ input[type=textarea], textarea {
   color: white;
   border-radius: 41px;
   min-width: 13ch;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
-input[type=textarea]
-{
+.desktop-input {
 
   font-family: 'SuisseIntl-Regular';
   font-weight: 400;
@@ -126,7 +130,7 @@ input[type=textarea]
 }
 
 
-input:not(:placeholder-shown) {
+.desktop-input:not(:placeholder-shown) {
   outline: none;
   border-color: white;
   color: black;
