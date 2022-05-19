@@ -24,7 +24,7 @@ $(document).ready(function(){
     $( '.caption' ).addClass( "caption_white" );
     $( 'input' ).addClass( "input-white" );
     $( '.forbody2' ).addClass( "forbody3" );
-    $( '.Dialogue_text1_white' ).addClass( "black_text" );
+    $( '.Dialogue_text1_white, .Dialogue2_text1_white' ).addClass( "black_text" );
     $( '.Dialogue_text2_gray' ).addClass( "gray_text" );
     $( '.area_arrow_1, .area_arrow_2' ).addClass( "hidden" );
     $( '.area_arrow_1, .area_arrow_2' ).addClass( "none" );
