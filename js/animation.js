@@ -225,6 +225,15 @@ $(document).ready(function(){
                     setTimeout(function(){
                       $(".area_arrow_1").addClass("hidden");
                     },30)
+                    setTimeout(function(){
+                      $(".Dialogue2_text1_white").addClass("hidden");
+                    },50)
+                    setTimeout(function(){
+                      $(".Dialogue2_text1_white").html("How are you today?");
+                    },500)
+                    setTimeout(function(){
+                      $(".Dialogue2_text1_white").removeClass("hidden");
+                    },1000)
 
                   });
                 });
@@ -241,6 +250,15 @@ $(document).ready(function(){
                     setTimeout(function(){
                       $(".area_arrow_1_whitemode").addClass("hidden");
                     },30)
+                    setTimeout(function(){
+                      $(".Dialogue2_text1_white").addClass("hidden");
+                    },50)
+                    setTimeout(function(){
+                      $(".Dialogue2_text1_white").html("How are you today?");
+                    },500)
+                    setTimeout(function(){
+                      $(".Dialogue2_text1_white").removeClass("hidden");
+                    },1000)
 
                   });
                 });
