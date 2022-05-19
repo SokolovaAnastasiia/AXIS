@@ -234,6 +234,18 @@ $(document).ready(function(){
                     setTimeout(function(){
                       $(".Dialogue2_text1_white").removeClass("hidden");
                     },1000)
+                    setTimeout(function(){
+                      $(".Dialogue_text3_white, .Dialogue_text3_gray").addClass("hidden");
+                    },50)
+                    setTimeout(function(){
+                      $(".Dialogue_text3_white").html("I want to get to know you better...");
+                    },500)
+                    setTimeout(function(){
+                      $(".Dialogue_text3_gray").html("Answer quickly");
+                    },500)
+                    setTimeout(function(){
+                      $(".Dialogue_text3_white, .Dialogue_text3_gray").removeClass("hidden");
+                    },1000)
 
                   });
                 });
@@ -258,6 +270,18 @@ $(document).ready(function(){
                     },500)
                     setTimeout(function(){
                       $(".Dialogue2_text1_white").removeClass("hidden");
+                    },1000)
+                    setTimeout(function(){
+                      $(".Dialogue_text3_white, .Dialogue_text3_gray").addClass("hidden");
+                    },50)
+                    setTimeout(function(){
+                      $(".Dialogue_text3_white").html("I want to get to know you better...");
+                    },500)
+                    setTimeout(function(){
+                      $(".Dialogue_text3_gray").html("Answer quickly");
+                    },500)
+                    setTimeout(function(){
+                      $(".Dialogue_text3_white, .Dialogue_text3_gray").removeClass("hidden");
                     },1000)
 
                   });
