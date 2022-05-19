@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 .contenier {
-  width: 400px;
+  width: 300px;
   height: 300px;
 }
 .button1_slide01 {
@@ -59,7 +59,7 @@
 #draggableArea {
   position: absolute;
   width: 134px;
-  margin-left: 131.5px;
+  margin-left: 83.5px;
   margin-top: 115px;
   height: 69.4px;
   border-radius: 90px;
