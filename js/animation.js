@@ -246,6 +246,15 @@ $(document).ready(function(){
                     setTimeout(function(){
                       $(".Dialogue_text3_white, .Dialogue_text3_gray").removeClass("hidden");
                     },1000)
+                    setTimeout(function(){
+                      $(".Dialogue_text4_white, .Dialogue_text4_gray").addClass("hidden");
+                    },50)
+                    setTimeout(function(){
+                      $(".Dialogue_text4_white").html("If an idea does not exist, create it.");
+                    },500)
+                    setTimeout(function(){
+                      $(".Dialogue_text4_white").removeClass("hidden");
+                    },1000)
 
                   });
                 });
@@ -282,6 +291,15 @@ $(document).ready(function(){
                     },500)
                     setTimeout(function(){
                       $(".Dialogue_text3_white, .Dialogue_text3_gray").removeClass("hidden");
+                    },1000)
+                    setTimeout(function(){
+                      $(".Dialogue_text4_white, .Dialogue_text4_gray").addClass("hidden");
+                    },50)
+                    setTimeout(function(){
+                      $(".Dialogue_text4_white").html("If an idea does not exist, create it.");
+                    },500)
+                    setTimeout(function(){
+                      $(".Dialogue_text4_white").removeClass("hidden");
                     },1000)
 
                   });
