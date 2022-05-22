@@ -12,12 +12,7 @@
 }
 
 
-@media screen and (max-width: 790px) {
-  .map {
-    grid-template-columns: repeat(2, 30vh);
-    grid-template-rows: repeat(2, 30vh);
-  }
-}
+
 
 .corner {
 
@@ -108,4 +103,41 @@
   left: -20px;
   bottom: -5px;
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 790px) {
+  .map {
+    grid-template-columns: repeat(2, 30vh);
+    grid-template-rows: repeat(2, 38vh);
+  }
+  .corner span {
+    font-family: 'SuisseIntl-Medium';
+    font-size: 32px;
+    line-height: 110%;
+  }
+
+  .right-top-corner span {
+    top: 34%;
+  }
+  .right-bottom-corner span {
+    top: 9%;
+    left: 34%;
+  }
+
+
+}
+
+@media screen and (max-width: 610px) {
+  .map {
+    grid-template-columns: repeat(2, 20vh);
+    grid-template-rows: repeat(2, 38vh);
+  }
+}
+
+
+@media screen and (max-width: 409px) {
+  .map {
+    grid-template-columns: repeat(2, 17vh);
+    grid-template-rows: repeat(2, 40vh);
+  }
 }
