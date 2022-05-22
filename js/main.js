@@ -34,6 +34,7 @@ $(document).ready(function(){
     $( '.button_mobile' ).addClass( "black_button_mobile" );
     $( '.chip' ).addClass( "white_chip" );
     $( '.sub-h2' ).addClass( "sub-h2_white" );
+    $( '.corner' ).addClass( "corner_white" );
 
 
   }

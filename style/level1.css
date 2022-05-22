@@ -1,0 +1,27 @@
+.left-top-corner:hover {
+  border-bottom: 2px solid  white;
+  border-right: 2px solid white;
+}
+
+.array {
+  display: none;
+}
+
+.left-top-corner:hover .array{
+  display: block;
+}
+
+.right-top-corner {
+  border-bottom: 2px solid  #111111;
+  border-left: 2px solid  #111111;
+}
+
+.right-bottom-corner {
+  border-top: 2px solid #111111;
+  border-left: 2px solid #111111;
+}
+
+.left-bottom-corner {
+  border-top: 2px solid #111111;
+  border-right: 2px solid #111111;
+}
