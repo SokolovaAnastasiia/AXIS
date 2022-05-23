@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  sessionStorage.setItem("level","1");
+  
   if (sessionStorage.getItem("mode") == 'white') {
     $(".game-text-desktop").attr("src","../images/game-text_white.svg");
   }
