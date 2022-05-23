@@ -35,7 +35,11 @@ $(document).ready(function(){
     $( '.chip' ).addClass( "white_chip" );
     $( '.sub-h2' ).addClass( "sub-h2_white" );
     $( '.corner' ).addClass( "corner_white" );
-  
+    $( '.message-input' ).addClass( "message-input-white" );
+    $( '.message' ).addClass( "message-white" );
+    $( '.send-button' ).addClass( "send-button-white" );
+    $( '.level' ).addClass( "level-white" );
+    $( '.question' ).addClass( "question-white" );
 
 
   }

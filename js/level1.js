@@ -3,6 +3,9 @@ $(document).ready(function(){
     $(".game-text-desktop").attr("src","../images/game-text_white.svg");
   }
 
+  $('.link').click(function() {
+    sessionStorage.setItem("question","1");
+  })
 
   $(".left-top-corner").on({
     mouseenter: function () {

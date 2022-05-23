@@ -1,0 +1,257 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 96vh;
+}
+
+.message-box {
+  width: 99%;
+  display: flex;
+  padding: 0 1vw;
+  box-sizing: border-box;
+  align-items: flex-end;
+}
+
+
+.message-input {
+  flex-grow: 1;
+  overflow: auto;
+  height:auto;
+  font-size: 24px;
+  border-radius: 40px;
+  padding: 15px 9px 15px 32px;
+  resize: none;
+
+  font-family: 'SuisseIntl-Regular';
+  font-size: 18px;
+  line-height: 24px;
+
+  outline: none;
+  background:none;
+  border: 2px solid #4B4B4B;
+  color: white;
+  border-radius: 41px;
+  min-width: 13ch;
+}
+
+.message-input-white:placeholder-shown:focus {
+  border-color: white;
+}
+
+.message-input:placeholder-shown:focus {
+  border-color: white;
+}
+
+.message-input:not(:placeholder-shown) {
+  outline: none;
+  border-color: white;
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.message-input-white {
+  border: 2px solid #CCCCCC !important;
+  color: black;
+  caret-color: #CCCCCC;
+}
+
+.message-input-white:not(:placeholder-shown) {
+  border-color: #CCCCCC !important;
+  outline: none;
+  color: black;
+  background-color: #CCCCCC;
+}
+
+.messages {
+  margin-top: 2vh;
+  flex-grow: 1;
+  overflow: auto;
+  margin-bottom: 1vh;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  box-sizing: border-box;
+  padding-left: 2vw
+}
+
+.message {
+  background: #CCCCCC;
+  margin-bottom: 1vh;
+  font-family: 'SuisseIntl-Regular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #4B4B4B;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 8.5px 16px 8.5px 16px;
+  max-width: 650px;
+  width: fit-content;
+}
+
+/* .message:first-child {
+  margin-top: 14vh;
+} */
+
+
+.message-white {
+  background-color: #E5E5E5;
+}
+
+
+.messages::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.message-input::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.secondary_button {
+  padding: 18px 47px;
+  margin-left: 2vw;
+  height: 20px;
+}
+
+.primary_button {
+  display: none;
+  padding: 18px 47px;
+  margin-left: 2vw;
+  height: 24px;
+}
+
+.level {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  width: fit-content;
+  gap: 10px;
+  border: 2px solid #4B4B4B;
+  border-radius: 48px;
+
+  font-family: 'SuisseIntl-Regular';
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+.level-white {
+  border-color: #CCCCCC;
+  color: #4B4B4B;
+}
+
+.caption {
+  display: none;
+  margin-top: 2vh;
+}
+
+.send-button {
+  display: none;
+}
+
+.send-button-ready {
+  background-image: url('../images/send-mobile-white.svg');
+}
+
+.send-button-white.send-button-ready {
+  background-image: url('../images/send-mobile-black.svg');
+}
+
+.send-button:hover {
+  background-image: url('../images/send-mobile-white.svg');
+}
+
+.send-button-white:hover {
+    background-image: url('../images/send-mobile-black.svg');
+}
+
+
+.slider {
+  margin-top: 1vh;
+}
+
+h3 {
+  margin: 0;
+}
+
+.question {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    padding: 32px 16px;
+    width: fit-content;
+    border-radius: 15px;
+    margin-right: 3vw;
+    top: 9vh;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.question > .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-image: url('../images/question-black.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.question > .text {
+  font-family: 'SuisseIntl-Regular';
+  font-size: 24px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+
+
+@media screen and (max-width: 414px) {
+  .message {
+    max-width: 70%;
+  }
+  .caption {
+    display: block;
+  }
+  .level {
+    display: none;
+  }
+  .send-button {
+    display: block;
+    margin-left: 2vw;
+  }
+  .secondary_button {
+    display: none;
+  }
+  .message-input {
+    padding: 18px 9px 18px 32px;
+  }
+  .question {
+    background-color: #111111;
+    border-radius: 15px;
+    padding: 8.5px 16px;
+  }
+
+  .question > .text {
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .question > .icon {
+    display: none;
+  }
+  .question-white {
+    background-color: white;
+  }
+  .question-white > .text {
+    color: black;
+  }
+}
