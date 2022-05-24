@@ -22,10 +22,10 @@ $(document).ready(function(){
     $( 'h2' ).not('.onboarding').addClass( "h2_white" );
     $( '.yes_no_button' ).addClass( "yes_no_button_white" );
     $( '.caption' ).addClass( "caption_white" );
-    $( 'input' ).addClass( "input-white" );
+    $( 'input, .Start_input' ).addClass( "input-white" );
     $( '.forbody2' ).addClass( "forbody3" );
-    $( '.Dialogue_text1_white, .Dialogue2_text1_white, .Dialogue_text3_white, .Dialogue_text4_white' ).addClass( "black_text" );
-    $( '.Dialogue_text2_gray, .Dialogue_text3_gray, .Dialogue_text4_gray' ).addClass( "gray_text" );
+    $( '.Dialogue_text1_white, .Dialogue2_text1_white, .Dialogue_text3_white, .Dialogue_text4_white, .Start_text1_white' ).addClass( "black_text" );
+    $( '.Dialogue_text2_gray, .Dialogue_text3_gray, .Dialogue_text4_gray, .Start_text1_gray' ).addClass( "gray_text" );
     $( '.area_arrow_1, .area_arrow_2' ).addClass( "hidden" );
     $( '.area_arrow_1, .area_arrow_2' ).addClass( "none" );
     $( '.area_arrow_1_whitemode, .area_arrow_2_whitemode' ).removeClass( "none" );
