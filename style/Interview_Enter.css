@@ -67,7 +67,7 @@ input {
     align-items: center;
     color: #FFFFFF;
     font-family: 'SuisseIntl-Regular';
-    transition: .5s;
+    transition: 0s;
     z-index: 3;
     cursor: pointer;
   }
@@ -130,7 +130,7 @@ input {
     background: #FFFFFF;
     border: 2px solid #CCCCCC;
     color: #000000;
-    transition: .5s;
+    transition: 0s;
   }
   .white_button:hover {
     background: #000000;
