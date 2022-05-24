@@ -247,13 +247,13 @@ $(document).ready(function(){
                       $(".Dialogue_text3_white, .Dialogue_text3_gray").removeClass("hidden");
                     },1000)
                     setTimeout(function(){
-                      $(".Dialogue_text4_white, .Dialogue_text4_gray").addClass("hidden");
+                      $(".Dialogue_text4_white, .Dialogue_text4_gray, .Start_input_area").addClass("hidden");
                     },50)
                     setTimeout(function(){
                       $(".Dialogue_text4_white").html("If an idea does not exist, create it.");
                     },500)
                     setTimeout(function(){
-                      $(".Dialogue_text4_white").removeClass("hidden");
+                      $(".Dialogue_text4_white, .Start_text1_white, .Start_text1_gray").removeClass("hidden");
                     },1000)
 
                   });
@@ -293,13 +293,13 @@ $(document).ready(function(){
                       $(".Dialogue_text3_white, .Dialogue_text3_gray").removeClass("hidden");
                     },1000)
                     setTimeout(function(){
-                      $(".Dialogue_text4_white, .Dialogue_text4_gray").addClass("hidden");
+                      $(".Dialogue_text4_white, .Dialogue_text4_gray, .Start_input_area").addClass("hidden");
                     },50)
                     setTimeout(function(){
                       $(".Dialogue_text4_white").html("If an idea does not exist, create it.");
                     },500)
                     setTimeout(function(){
-                      $(".Dialogue_text4_white").removeClass("hidden");
+                      $(".Dialogue_text4_white, .Start_text1_white, .Start_text1_gray").removeClass("hidden");
                     },1000)
 
                   });
@@ -317,6 +317,13 @@ $(document).ready(function(){
                     setTimeout(function(){
                       $(".area_arrow_1_whitemode").addClass("hidden");
                     },30)
+
+                  });
+                });
+            $(document).ready(function(){
+                  $(".Start_input_area").click(function(){
+                    $(".area_arrow_1, .area_arrow_1_whitemode").removeClass("hidden2");
+
 
                   });
                 });
