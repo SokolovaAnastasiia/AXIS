@@ -1,0 +1,223 @@
+.contenier_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.Start_text1_white {
+  width: 69.56%;
+  height: auto;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-family: 'SuisseIntl-Medium';
+  margin-top: -180px;
+  font-size: 48px;
+  line-height: 110%;
+  transition: .5s;
+}
+.Start_text1_gray {
+  width: 69.56%;
+  height: 100px;
+  color: #4B4B4B;
+  text-align: center;
+  align-items: center;
+  font-family: 'SuisseIntl-Medium';
+  margin-top: 2px;
+  font-size: 48px;
+  line-height: 110%;
+  transition: .5s;
+}
+.Start_input_area {
+  width: 75.56%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  margin-top: -185px;
+  transition: .5s;
+  z-index: 15;
+}
+.Start_input {
+  width: 100%;
+  flex-grow: 1;
+  overflow: auto;
+  resize: none;
+  height: 150px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-family: 'SuisseIntl-Regular';
+  margin-top: 220px;
+  font-size: 48px;
+  line-height: 110%;
+  transition: 0s;
+  background: black;
+  outline: none;
+  border: 0px;
+  padding: 0px;
+}
+.input-white {
+  color: black;
+  caret-color: #CCCCCC;
+  background: white;
+}
+::placeholder {
+  color: #4B4B4B;
+}
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .area_arrow_1 {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+    z-index: 4;
+  }
+  .arrow1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 4;
+    cursor: pointer;
+  }
+  .arrow1:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+  .area_arrow_2 {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  a:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+  a {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 1;
+    cursor: pointer;
+  }
+  a:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+  .front {
+    z-index: 7;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+  .hidden2 {
+    opacity: 0;
+  }
+  .blocker {
+    display: none;
+  }
+
+  .white {
+    background: #FFFFFF;
+    /* transition: .5s; */
+  }
+  .white_text {
+    color: #FFFFFF;
+    /* transition: .5s; */
+  }
+  .black_text {
+    color: black;
+    /* transition: .5s; */
+  }
+  .gray_text {
+    color: #CCCCCC;
+  }
+  .white_button {
+    background: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    color: #000000;
+    transition: .5s;
+  }
+  .white_button:hover {
+    background: #000000;
+    border: 2px solid #000000;
+    color: #FFFFFF;
+    transition: .1s;
+  }
+  .gray {
+    background-color: #3B3B3B;
+  }
+  .area_arrow_1_whitemode {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .arrow1_whitemode {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 4;
+    cursor: pointer;
+  }
+  .arrow1_whitemode:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+  .area_arrow_2_whitemode {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+  }
+  .none {
+    pointer-events: none;
+  }
