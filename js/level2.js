@@ -20,7 +20,7 @@ $(document).ready(function(){
         $('.right-bottom-corner').css( {borderTop: '2px solid black'});
       }
       else {
-        $('.right-top-corner').css( {borderRight: '2px solid white'});
+        $('.left-top-corner').css( {borderRight: '2px solid white'});
       }
     },
     mouseleave: function () {
@@ -32,7 +32,7 @@ $(document).ready(function(){
         $('.right-bottom-corner').css( {borderTop: '2px solid #CCCCCC'});
       }
       else {
-        $('.right-top-corner').css( {borderRight: '2px solid #111111'});
+        $('.left-top-corner').css( {borderRight: '2px solid #111111'});
       }
     }
 });

@@ -1,0 +1,58 @@
+.right-bottom-corner:hover {
+  border-top: 2px solid  white;
+  border-left: 2px solid white;
+}
+
+.right-bottom-corner:hover span {
+  color: white;
+}
+
+.corner_white.right-bottom-corner:hover span {
+  color: black;
+}
+
+.corner_white.right-bottom-corner:hover {
+  border-top: 2px solid  black;
+  border-left: 2px solid black;
+}
+
+.array {
+  display: none;
+}
+
+
+.left-top-corner {
+  border-bottom: 2px solid  #111111;
+  border-right: 2px solid  #111111;
+}
+
+.right-top-corner {
+  border-bottom: 2px solid #111111;
+  border-left: 2px solid #111111;
+}
+
+.left-bottom-corner {
+  border-top: 2px solid #111111;
+  border-right: 2px solid #111111;
+}
+
+.array {
+  background-image: url('../images/array-not-hovered2.svg');
+}
+
+.corner_white > .array {
+  background-image: url('../images/array-black.svg');
+}
+
+.game-text-desktop {
+  margin: 4vh auto;
+  display: none;
+  transition: 0.3s;
+}
+
+
+@media screen and (max-width: 790px) {
+  .game-text-desktop {
+    transform: scale(0.8);
+  }
+}
