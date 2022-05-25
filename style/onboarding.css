@@ -21,6 +21,16 @@
   color: black !important;
 }
 
+.next-button {
+  display: none;
+  position: absolute;
+  z-index: 12;
+  bottom: 4vh;
+  left: 3vh;
+  width: 58%;
+  background-color: #4B4B4B;
+}
+
 
 #skip {
   position: absolute;

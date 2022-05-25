@@ -67,5 +67,53 @@ $(document).ready(function(){
     }
   }
 
+  var textarea = document.querySelector('.message-input');
+  textarea.addEventListener('keydown', autosize);
+  function autosize(){
+    var el = this;
+    setTimeout(function(){
+      el.style.cssText = 'height:24px; padding:0';
+      // for box-sizing other than "content-box" use:
+      // el.style.cssText = '-moz-box-sizing:content-box';
+      el.style.cssText = 'height:' + el.scrollHeight + 'px';
+    },0);
+  }
+
+  $( ".send-button" ).click(function() {
+    addMessage();
+    $('.message-box').css('display','none');
+    $('.next-button').css('display','flex');
+  })
+
+  $(document).keypress(function(event){
+    $(".message-input").focus();
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){
+      addMessage();
+      $('.message-input').val('');
+      $(".message-input").blur();
+      $('.message-box').css('display','none');
+      $('.next-button').css('display','flex');
+    }
+  });
+
+  function addMessage() {
+    value = $(".message-input").val();
+    if (value != "") {
+      $('.message-input').val('');
+      $('.message-input').css('height','auto');
+      if (sessionStorage.getItem("mode") == 'white') {
+        var new_message = $("<div class='message message-white'></div>").text(value);
+      }
+      else {
+        var new_message = $("<div class='message'></div>").text(value);
+      }
+
+      $('.messages').append(new_message);
+      document.getElementsByClassName('messages')[0].scrollTop = document.getElementsByClassName('messages')[0].scrollHeight;
+
+    }
+  }
+
 
 })

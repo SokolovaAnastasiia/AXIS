@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+  setInterval(() => {
+    if ($('#check-slide').hasClass('swiper-slide-active')) {
+      $('.next-button').css('display','flex');
+      $('.send-button-mobile').css('display','none');
+    }
+  }, 1000)
+
+  document.addEventListener('swiped', function(e) {
+      console.log(e.target); // the element that was swiped
+      console.log(e.detail.dir);
+      alert('wefwfe') // swiped direction
+  });
+
   var swiper = new Swiper('.swiper-container', {
     scrollbar: {
       el: '.swiper-scrollbar',

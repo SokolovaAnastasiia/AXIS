@@ -325,6 +325,7 @@ $(document).on( "click", ".add-more", function(){
   });
 
   $(document).keypress(function(event){
+    $(".message-input").focus();
     var keycode = (event.keyCode ? event.keyCode : event.which);
     if(keycode == '13'){
       addMessage();
