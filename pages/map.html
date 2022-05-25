@@ -18,7 +18,155 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 
   <link rel='stylesheet' href='../style/ui-kit.css' />
-  <link rel='stylesheet' href='../style/map.css' />
+  <link rel='stylesheet' href='../style/map2.css' />
+  <style media="screen">
+  @media screen and (max-width: 480px) {
+    .contenier_main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .boxer {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100vh;
+      animation: show 4s forwards;
+    }
+    .Dialogue_text4_white {
+      width: 70.56%;
+      height: auto;
+      color: white;
+      text-align: center;
+      align-items: center;
+      font-family: 'SuisseIntl-Medium';
+      margin-top: 20px;
+      font-size: 32px;
+      line-height: 110%;
+      transition: .5s;
+    }
+    .emogi_text {
+      width: 69.56%;
+      height: auto;
+      color: white;
+      text-align: center;
+      align-items: center;
+      font-family: 'SuisseIntl-Medium';
+      margin-top: 0px;
+      font-size: 32px;
+      line-height: 140%;
+      letter-spacing: 0.35em;
+      transition: .5s;
+    }
+    .area_arrow_1 {
+      position: absolute;
+      bottom: 40px;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 62px;
+      overflow: hidden;
+      z-index: 4;
+    }
+    .arrow1 {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 62px;
+      height: 62px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      transition: .5s;
+      z-index: 4;
+      cursor: pointer;
+    }
+    a:hover {
+      opacity: .6;
+      transition: .1s;
+    }
+    a {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 62px;
+      height: 62px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      transition: .5s;
+      z-index: 1;
+      cursor: pointer;
+    }
+    a:hover {
+      opacity: .6;
+      transition: .1s;
+    }
+    .front {
+      z-index: 7;
+    }
+
+    .hidden {
+      opacity: 0;
+    }
+    .blocker {
+      display: none;
+    }
+
+    .white {
+      background: #FFFFFF;
+      /* transition: .5s; */
+    }
+    .white_text {
+      color: #FFFFFF;
+      /* transition: .5s; */
+    }
+    .black_text {
+      color: black;
+      /* transition: .5s; */
+    }
+    .area_arrow_1_whitemode {
+      position: absolute;
+      bottom: 40px;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 62px;
+      overflow: hidden;
+      z-index: 4;
+    }
+    .arrow1_whitemode {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      width: 62px;
+      height: 62px;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      transition: .5s;
+      z-index: 4;
+      cursor: pointer;
+    }
+    .arrow1_whitemode:hover {
+      opacity: .6;
+      transition: .1s;
+    }
+    .none {
+      pointer-events: none;
+    }
+  }
+  </style>
 
 </head>
 <body>
@@ -43,6 +191,30 @@
 
   </div>
 </div>
+<div class="boxer">
+  <div class="contenier_main">
+  <div class="emogi_text">
+    🏐<br>🎾<br>🏀 🏐 🏀
+  </div>
+  <div class="Dialogue_text4_white">
+    Game complete!<br>You win!!!
+  </div>
+  <div class="emogi_text">
+    🥎<br>🍀
+  </div>
+  </div>
+  <div class="area_arrow_1">
+    <div class="arrow1">
+      <a href="#"><img src="../images/Component 2.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="area_arrow_1_whitemode hidden none">
+    <div class="arrow1_whitemode">
+      <a href="#"><img src="../images/Component 1.svg" alt=""></a>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
