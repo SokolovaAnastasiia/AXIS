@@ -35,8 +35,11 @@ $(document).ready(function(){
     $( '.area_arrow_1, .area_arrow_2' ).addClass( "none" );
     $( '.area_arrow_1_whitemode, .area_arrow_2_whitemode' ).removeClass( "none" );
     $( '.area_arrow_1_whitemode' ).removeClass( "hidden" );
+    $( '.name_button' ).removeClass( "black_button" );
     $( '.name_button' ).addClass( "white_button" );
     $( '.button_mobile' ).addClass( "black_button_mobile" );
+    $( '.palka, .palka2' ).removeClass( "white_plus" );
+    $( '.palka, .palka2' ).addClass( "black_plus" );
     $( '.chip' ).addClass( "white_chip" );
     $( '.sub-h2' ).addClass( "sub-h2_white" );
     $( '.corner' ).addClass( "corner_white" );
