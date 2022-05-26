@@ -327,3 +327,16 @@ $(document).ready(function(){
 
                   });
                 });
+              $(document).ready(function(){
+                      $(".Start_input_area").click(function(){
+                        $(".area_button_desktop").removeClass("hidden");
+                      });
+                    });
+            $(document).ready(function(){
+                  $(".boxer").click(function(){
+                    $(".boxer").addClass("hidden");
+                    setTimeout(function(){
+                      $(".contenier_main").removeClass("hidden");
+                    },500)
+                  });
+                });
