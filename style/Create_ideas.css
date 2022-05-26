@@ -1,0 +1,324 @@
+.contenier_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.area_button_desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-end;
+  width: 290px;
+  height: 100vh;
+  overflow: hidden;
+}
+.Start_text1_white {
+  width: 69.56%;
+  height: auto;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-family: 'SuisseIntl-Medium';
+  margin-top: -180px;
+  font-size: 48px;
+  line-height: 110%;
+  transition: .5s;
+}
+.Start_text1_gray {
+  width: 69.56%;
+  height: 100px;
+  color: #4B4B4B;
+  text-align: center;
+  align-items: center;
+  font-family: 'SuisseIntl-Medium';
+  margin-top: 2px;
+  font-size: 48px;
+  line-height: 110%;
+  transition: .5s;
+}
+.Start_input_area {
+  width: 63%;
+  height: 100vh;
+  margin-left: 21px;
+  margin-top: 26px;
+  text-align: left;
+  align-items: left;
+  transition: .5s;
+  z-index: 15;
+}
+.Start_input {
+  width: 100%;
+  flex-grow: 1;
+  overflow: auto;
+  resize: none;
+  height: 100vh;
+  color: white;
+  text-align: left;
+  align-items: left;
+  font-family: 'SuisseIntl-Medium';
+  font-size: 48px;
+  line-height: 110%;
+  transition: 0s;
+  background: black;
+  outline: none;
+  border: 0px;
+  padding: 0px;
+}
+.input-white {
+  color: black;
+  caret-color: #CCCCCC;
+  background: white;
+}
+::placeholder {
+  color: #4B4B4B;
+}
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .area_arrow_1 {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+    z-index: 4;
+  }
+  .arrow1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 4;
+    cursor: pointer;
+  }
+  .arrow1:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+  .area_arrow_2 {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  a:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+  a {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 1;
+    cursor: pointer;
+  }
+  a:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+  .front {
+    z-index: 7;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+  .hidden2 {
+    opacity: 0;
+  }
+  .blocker {
+    display: none;
+  }
+  .black_plus {
+    background: #000000;
+  }
+  .white_plus {
+    background: white;
+  }
+  .white {
+    background: #FFFFFF;
+    /* transition: .5s; */
+  }
+  .white_text {
+    color: #FFFFFF;
+    /* transition: .5s; */
+  }
+  .black_text {
+    color: black;
+    /* transition: .5s; */
+  }
+  .gray_text {
+    color: #CCCCCC;
+  }
+  .white_button {
+    background: black;
+    color: white;
+  }
+  .black_button {
+    background: #FFFFFF;
+    color: #000000;
+  }
+  .black_button:hover {
+    background: #CCCCCC;
+  }
+  .white_button:hover {
+    background: #4B4B4B;
+  }
+  .gray {
+    background-color: #3B3B3B;
+  }
+  .area_arrow_1_whitemode {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .arrow1_whitemode {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 4;
+    cursor: pointer;
+  }
+  .arrow1_whitemode:hover {
+    opacity: .6;
+    transition: .1s;
+  }
+  .area_arrow_2_whitemode {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+  }
+  .none {
+    pointer-events: none;
+  }
+  .name_button {
+    width: 238px;
+    height: 72px;
+    margin-bottom: 32px;
+
+    border-radius: 15px;
+    font-size: 24px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'SuisseIntl-Regular';
+    transition: 0s;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .boxer {
+    position: absolute;
+    left: 20px;
+    top: 23px;
+    width: 42%;
+    height: 160px;
+    display: flex;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .boxer:hover{
+    opacity: .5;
+  }
+  .plus {
+    display: flex;
+    width: 66px;
+    height: 66px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .palka {
+    width: 100%;
+    height: 4px;
+
+  }
+  .palka2 {
+    width: 100%;
+    height: 4px;
+    margin-top: -4px;
+
+    transform: rotate(90deg);
+  }
+  .Dialogue_text4_white {
+    width: 100%;
+    height: auto;
+
+    text-align: left;
+    align-items: center;
+    font-family: 'SuisseIntl-Medium';
+    margin-top: 8px;
+    margin-left: 22px;
+    font-size: 48px;
+    line-height: 110%;
+    transition: .5s;
+  }
+  .Dialogue_text4_gray {
+    width: 100%;
+    height: auto;
+
+    text-align: left;
+    align-items: center;
+    font-family: 'SuisseIntl-Regular';
+    margin-top: 0px;
+    margin-left: 22px;
+    font-size: 24px;
+    line-height: 110%;
+    transition: .5s;
+  }
+  .plus_text {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
