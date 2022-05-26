@@ -1,5 +1,37 @@
 $(document).ready(function(){
 
+  const chips_list = [[
+    'What elemental god would you be',
+    'Water',
+    'Fire',
+    'Earth',
+    'Air',
+  ],
+  [
+    'cc1',
+    'cc2',
+    'cc3',
+  ],
+  [
+    'ccc1',
+    'ccc2',
+    'ccc3',
+  ],
+  [
+    'cccc1',
+    'cccc2',
+    'cccc3',
+  ]];
+
+let chipses = sessionStorage.getItem('questions-interview');
+
+console.log(chipses);
+
+console.log(chips_list[chipses[0]]);
+console.log(chips_list[chipses[1]]);
+
+
+
   $( ".send-button" ).click(function() {
     $( ".send-button" ).toggleClass( "bounce" );
   })

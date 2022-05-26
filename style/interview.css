@@ -103,9 +103,23 @@ h2 {
   height: 66vh;
 }
 
-
+#interview3-next-button {
+  display: none;
+}
 
 @media screen and (max-width: 400px) {
+
+  #interview3-next-button {
+    display: flex;
+    position: absolute;
+    width: 61vw;
+    bottom: 2vh;
+  }
+
+  #interview-3-yes-no-button {
+    display: none;
+  }
+
   .chat {
     display: flex;
     flex-direction: column;
@@ -148,6 +162,22 @@ h2 {
   }
   .message-input {
     padding: 18px 9px 15px 18px;
+  }
+  .chips {
+    position: absolute;
+    top: 20vh;
+    left: -20vw;
+    right: -20vw;
+  }
+  .chip {
+    border: none;
+  }
+  .chosen-chip {
+    border: none !important;
+    padding: 15px 32px;
+  }
+  #interview-4-yes-no-button {
+    display: none;
   }
   /* input[type=textarea] {
     display: block;
