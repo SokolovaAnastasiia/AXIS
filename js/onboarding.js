@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  const question = [0,1,2,3];
+  let questions = question.sort(() => Math.random() - Math.random()).slice(0, 3);
+  sessionStorage.setItem('questions-interview', questions);
+
   setInterval(() => {
     if ($('#check-slide').hasClass('swiper-slide-active')) {
       $('.next-button').css('display','flex');

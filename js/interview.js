@@ -8,27 +8,95 @@ $(document).ready(function(){
     'Air',
   ],
   [
-    'cc1',
-    'cc2',
-    'cc3',
+    'What is your internal time horizon?',
+    '30 years',
+    '30 days',
+    'week',
+    'day',
+    '2 hours',
+    '15 minutes'
   ],
   [
-    'ccc1',
-    'ccc2',
-    'ccc3',
+    'What word fits the state of your creativity right now?',
+    'Exuberant',
+    'Manic',
+    'Depleted',
+    'Free',
+    'Confined',
+    'Balanced',
+    'Focused',
+    'Logical',
+    'Deliberate',
+    'On bass',
+    'Stuck',
+    'Expansive'
   ],
   [
-    'cccc1',
-    'cccc2',
-    'cccc3',
+    'Where does what you create come from? Choose a few',
+    'Heart',
+    'Truth',
   ]];
+
+let questions_yes_no = [
+  'Do you observant?',
+  'Do you trust your intuition?',
+  'Do you have own mythology?',
+  'Are some questions confusing?',
+  'Do you like to invent plots or stories?',
+  'Are you talkative?',
+]
+
+let questions_text = [
+  'If you could share one thing about yourself with the world, what would it be?',
+  'What color is your mood this year?',
+  'What has inspired you in the last month?',
+  'Who were the yous before you were you now?',
+  'What symbols appear consistently in your life? In few words',
+  'What does the sky smell like today?',
+  'What areas of you do you want to water today?',
+  'How do you embody real, truth, joy, peace?',
+  'What instrument are you and why?',
+]
+
+var yes_no_1 = questions_yes_no[Math.floor(Math.random()*questions_yes_no.length)];
+$('#h2-interview1').html(yes_no_1);
+
+var text_q = questions_text[Math.floor(Math.random()*questions_text.length)];
+$('#h2-interview2').html(text_q);
 
 let chipses = sessionStorage.getItem('questions-interview');
 
-console.log(chipses);
+chipses = chipses.split(',');
 
-console.log(chips_list[chipses[0]]);
-console.log(chips_list[chipses[1]]);
+$('#h2-interview3').html(chips_list[chipses[0]][0]);
+first_arr = chips_list[chipses[0]].slice(1);
+let first_arr_chips = $('#chips_1');
+addChip(first_arr, first_arr_chips);
+
+$('#h2-interview4').html(chips_list[chipses[1]][0]);
+second_arr = chips_list[chipses[1]].slice(1);
+let second_arr_chips = $('#chips_2');
+addChip(second_arr, second_arr_chips);
+
+$('#h2-interview5').html(chips_list[chipses[2]][0]);
+third_arr = chips_list[chipses[2]].slice(1);
+let third_arr_chips = $('#chips_3');
+addChip(third_arr, third_arr_chips);
+
+
+function addChip(arr, element) {
+  arr.forEach(function(value) {
+      var new_chip = $('<div class="chip"></div>');
+      var new_chip_icon = $('<div class="icon"></div>');
+      var new_chip_text = $('<div class="chip-text"></div>').text(value);
+      new_chip.append(new_chip_icon);
+      new_chip.append(new_chip_text);
+      element.append(new_chip);
+  });
+}
+
+
+
 
 
 
