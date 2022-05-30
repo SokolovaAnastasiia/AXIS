@@ -219,7 +219,7 @@ let q = [];
   console.log(q);
 
 
-let mes_height = $(document).height() - 130;
+let mes_height = $(document).height() - 145;
 console.log(mes_height);
 $('.messages').height(mes_height);
 
