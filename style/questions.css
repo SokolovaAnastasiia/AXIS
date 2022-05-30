@@ -10,6 +10,10 @@
   padding: 0 1vw;
   box-sizing: border-box;
   align-items: flex-end;
+  position: fixed;
+    bottom: 2vh;
+    right: 0;
+    left: 0;
 }
 
 
@@ -68,7 +72,7 @@
   flex-grow: 1;
   overflow: auto;
   margin-bottom: 1vh;
-  max-height: 85vh;
+  max-height: 77vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -220,8 +224,15 @@ h3 {
   background-image: url('../images/more-white.svg');
 }
 
+#capt {
+  display: none;
+}
+
 
 @media screen and (max-width: 414px) {
+  #capt {
+    display: block;
+  }
   .message {
     max-width: 70%;
   }
