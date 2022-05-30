@@ -46,6 +46,8 @@ $(document).ready(function(){
     $( '.send-button' ).addClass( "send-button-white" );
     $( '.level' ).addClass( "level-white" );
     $( '.question' ).addClass( "question-white" );
+    $(".skip_or_not_head").attr("src","../images/intro_head_white.svg");
+
 
 
   }

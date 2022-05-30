@@ -11,15 +11,35 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="../js/main.js"></script>
 
+  <script type="text/javascript">
+
+
+    // if ($(window).width() < 414) {
+    //   $('.message-input').css('display', 'none');
+    //   $('.primary_button').css('display', 'flex');
+    //   $('.add-more').css('display', 'block');
+    //   $('.send-it').css('display', 'none');
+    // }
+  </script>
+
   <link rel='stylesheet' href='../style/ui-kit.css' />
   <link rel='stylesheet' href='../style/skip_or_not.css' />
 </head>
-<body class='dark-mode'>
+<body id='skip_or_not_illustration' class='dark-mode'>
+  <img src="../images/intro_head.svg" class='skip_or_not_head' alt="">
+  <div class="buttons-desktop">
+    <div class="button primary_button">
+      <a href="../pages/onboarding.html">Start</a>
+    </div>
+    <div class="button secondary_button">
+      <a href="#">Skip</a>
+    </div>
+  </div>
   <div class="button primary_button" id='skip_or_not__primary_button'>
-    <a href="../pages/onboarding.html">Start</a>
+    <a href="../pages/onboarding.html">Enter</a>
   </div>
   <div class="button secondary_button" id='skip_or_not__secondary_button'>
-    <a href="#">Skip</a>
+    <a href="#">Skip intro</a>
   </div>
 </body>
 </html>
