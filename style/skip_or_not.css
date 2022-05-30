@@ -21,6 +21,10 @@
     gap: 22px;
 }
 
+.buttons-mobile {
+  display: none;
+}
+
 #skip_or_not_illustration {
   background-image: url('../images/illustration1.svg');
   background-position: top 18vh center;
@@ -28,6 +32,16 @@
 }
 
 @media screen and (max-width: 500px) {
+
+  .buttons-mobile {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 1vw;
+    right: 1vw;
+    bottom: 1vh;
+  }
+
   #skip_or_not__primary_button {
     display: flex;
     margin: 5vh 1vh 0;
@@ -46,8 +60,11 @@
     background-size: 23vh;
   }
   .skip_or_not_head {
-    transform: scale(0.7);
-    margin: 60vh auto 0;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0.7);
+    bottom: 33vh;
+    margin: 0;
   }
 }
 
