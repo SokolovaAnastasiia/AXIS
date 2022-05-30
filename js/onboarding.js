@@ -51,7 +51,7 @@ $(document).ready(function(){
     switch (sessionStorage.getItem("onboarding")) {
       case '1':
           console.log('one');
-          $('.onboarding-card').css("background-color", "#015924");
+          $('.onboarding-card').css("background-color", "#E5E5E5");
 
           $('#back').css("display", "none");
           $('.send-button').css("display", "block");

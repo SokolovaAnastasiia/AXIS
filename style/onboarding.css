@@ -13,6 +13,10 @@
   color: black !important;
 }
 
+.h2-mobile {
+  color: black;
+}
+
 .onboarding-card .text_1 {
   max-width: 438px;
 }
@@ -23,12 +27,13 @@
 
 .next-button {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 12;
   bottom: 4vh;
-  left: 3vh;
-  width: 58%;
-  background-color: #4B4B4B;
+  left: 2vw;
+  right: 2vw;
+  /* width: 100%; */
+  background-color: black;
 }
 
 
@@ -102,9 +107,10 @@
 
 .send-button-mobile {
   background-image: url('../images/send-onboarding-hover.svg');
-  position: absolute;
   bottom: 4vh;
-  right: 4vw;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
 }
 
@@ -127,9 +133,14 @@
   width: 100%;
   height: 100%;
 }
+
+
 .swiper-slide {
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
+  background-repeat: no-repeat;
+  background-position: top 21vh center;
+
 
 
   /* Center slide text vertically */
@@ -148,16 +159,16 @@
 }
 
 .swiper-slide h2 {
-  margin: 68vh 2vh 2vw 2vh;
+  /* margin: 68vh 2vh 2vw 2vh; */
 }
 
 .swiper-slide .text_1_mobile {
-  margin: 1vh 2vh 2vw 2vh;
+  /* margin: 1vh 2vh 2vw 2vh; */
 }
 
 .swiper-scrollbar {
   bottom: auto;
-  top: 5vh;
+  top: 42px;
 }
 
 .swiper-container-horizontal>.swiper-scrollbar {
@@ -176,7 +187,7 @@
 .swiper-scrollbar:before {
   content: 'How it works';
   position: absolute;
-  top: -2.5vh;
+  top: -22px;
   font-family: 'SuisseIntl-Regular';
   font-size: 14px;
   line-height: 14px;
@@ -209,11 +220,29 @@
   z-index: 999;
 } */
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
   .desktop {
     display: none;
   }
   .mobile {
     display: flex;
+  }
+  .data {
+    /* position: fixed; */
+    /* bottom: 26vh;
+    left: 1vw;
+    right: 1vw; */
+    margin-top: 60vh;
+    padding: 0vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .swiper-slide .h2-mobile {
+    margin-bottom: 1vh;
+  }
+  .swiper-slide .text_1_mobile {
+    margin: 0;
+    text-align: center;
   }
 }
