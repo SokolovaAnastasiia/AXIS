@@ -149,7 +149,7 @@
 }
 
 .caption {
-  display: none;
+  /* display: none; */
   margin-top: 2vh;
 }
 

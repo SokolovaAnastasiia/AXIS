@@ -91,7 +91,13 @@ function addChip(arr, element) {
       var new_chip_text = $('<div class="chip-text"></div>').text(value);
       new_chip.append(new_chip_icon);
       new_chip.append(new_chip_text);
+
+      if (sessionStorage.getItem("mode") == 'white') {
+        new_chip.addClass('white_chip');
+      }
+
       element.append(new_chip);
+
   });
 }
 
