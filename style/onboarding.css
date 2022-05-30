@@ -7,6 +7,8 @@
   box-sizing: border-box;
   position: relative;
   background: #015924;
+  background-repeat: no-repeat;
+  background-position: top 19vh center;
 }
 
 .h2-abother {
@@ -23,6 +25,7 @@
 
 .onboarding {
   color: black !important;
+  margin-bottom: 1vh;
 }
 
 .next-button {

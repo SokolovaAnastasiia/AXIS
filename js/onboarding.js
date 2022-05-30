@@ -52,6 +52,13 @@ $(document).ready(function(){
       case '1':
           console.log('one');
           $('.onboarding-card').css("background-color", "#E5E5E5");
+          $('.onboarding-card').css("background-image", "url('../images/onboarding1.svg')");
+          $('.onboarding-card').css("background-position", "top 19vh center");
+          $('.onboarding-card').css("background-size", "auto");
+
+          $('.onboarding-card .onboarding').css('margin', '0 auto 1vh');
+          $('.onboarding-card .text_1').css('margin', '0 auto');
+          $('.onboarding-card .text_1').css('text-align', 'center');
 
           $('#back').css("display", "none");
           $('.send-button').css("display", "block");
@@ -65,6 +72,13 @@ $(document).ready(function(){
       case '2':
           console.log('two');
           $('.onboarding-card').css("background-color", "#00A237");
+          $('.onboarding-card').css("background-image", "url('../images/onboarding2.svg')");
+          $('.onboarding-card').css("background-position", "top 13vh right 9vh");
+          $('.onboarding-card').css("background-size", "auto");
+
+          $('.onboarding-card .onboarding').css('margin', '0 0 1vh');
+          $('.onboarding-card .text_1').css('margin', '0 0');
+          $('.onboarding-card .text_1').css('text-align', 'left');
 
           $('#back').css("display", "block");
           $('.send-button').css("display", "block");
@@ -79,6 +93,13 @@ $(document).ready(function(){
       case '3':
           console.log('three');
           $('.onboarding-card').css("background-color", "#1743B4");
+          $('.onboarding-card').css("background-image", "url('../images/onboarding3.svg')");
+          $('.onboarding-card').css("background-position", "top 17vh right 13vh");
+          $('.onboarding-card').css("background-size", "auto");
+
+          $('.onboarding-card .onboarding').css('margin', '0 0 1vh');
+          $('.onboarding-card .text_1').css('margin', '0 0');
+          $('.onboarding-card .text_1').css('text-align', 'left');
 
           $('#back').css("display", "block");
           $('.send-button').css("display", "block");
@@ -92,7 +113,14 @@ $(document).ready(function(){
         break;
       case '4':
           console.log('four');
-          $('.onboarding-card').css("background-color", "#595957");
+          $('.onboarding-card').css("background-color", "#F5B2E7");
+          $('.onboarding-card').css("background-image", "url('../images/onboarding4.svg')");
+          $('.onboarding-card').css("background-position", "top 7vh right 16vh");
+          $('.onboarding-card').css("background-size", "43%");
+
+          $('.onboarding-card .onboarding').css('margin', '0 0 1vh');
+          $('.onboarding-card .text_1').css('margin', '0 0');
+          $('.onboarding-card .text_1').css('text-align', 'left');
 
           $('#back').css("display", "block");
           $('.send-button').css("display", "block");
@@ -107,13 +135,20 @@ $(document).ready(function(){
       case '5':
           console.log('fife');
           $('.onboarding-card').css("background-color", "#7FD600");
+          $('.onboarding-card').css("background-image", "url('../images/onboarding5.svg')");
+          $('.onboarding-card').css("background-position", "top 9vh center");
+          $('.onboarding-card').css("background-size", "auto");
+
+          $('.onboarding-card .onboarding').css('margin', '39vh auto 1vh');
+          $('.onboarding-card .text_1').css('margin', '0 auto');
+          $('.onboarding-card .text_1').css('text-align', 'center');
 
           $('#back').css("display", "block");
           $('.send-button').css("display", "none");
           $('.lets-start').css("display", "block");
 
           $(".onboarding-card h2").text('Believe me.');
-          $(".onboarding-card p").html("I don't store data. And I don't use them.");
+          $(".onboarding-card p").html("I don't store data.<br> And I don't use them.");
 
           $( '.slider-item' ).slice( 1, 5).addClass( 'slider-item_selected' );
         break;
