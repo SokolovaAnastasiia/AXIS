@@ -5,15 +5,14 @@
 }
 
 .message-box {
-  width: 99%;
   display: flex;
   padding: 0 1vw;
   box-sizing: border-box;
   align-items: flex-end;
   position: fixed;
-    bottom: 2vh;
-    right: 0;
-    left: 0;
+  bottom: 2vh;
+  right: 1vw;
+  left: 1vw;
 }
 
 
@@ -68,16 +67,17 @@
 }
 
 .messages {
-  margin-top: 2vh;
+  /* margin-top: 2vh;
   flex-grow: 1;
   overflow: auto;
   margin-bottom: 1vh;
-  max-height: 77vh;
+  max-height: 77vh; */
   display: flex;
   flex-direction: column;
   justify-content: end;
   box-sizing: border-box;
-  padding-left: 2vw
+  padding-left: 2vw;
+  overflow: auto;
 }
 
 .message {
@@ -238,6 +238,10 @@ h3 {
   }
   .caption {
     display: block;
+    margin-top: 5px;
+  }
+  .slider {
+    margin-top: 8px;
   }
   .level {
     display: none;
@@ -256,6 +260,7 @@ h3 {
     background-color: #111111;
     border-radius: 15px;
     padding: 8.5px 16px;
+    top: 62px;
   }
 
   .question > .text {

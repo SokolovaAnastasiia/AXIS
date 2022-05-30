@@ -219,6 +219,11 @@ let q = [];
   console.log(q);
 
 
+let mes_height = $(document).height() - 130;
+console.log(mes_height);
+$('.messages').height(mes_height);
+
+
 
   $('.question .text').html(q[0]);
 
