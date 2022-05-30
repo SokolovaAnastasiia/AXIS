@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   #skip_or_not__primary_button {
     display: flex;
     margin: 5vh 1vh 0;
@@ -48,5 +48,14 @@
   .skip_or_not_head {
     transform: scale(0.7);
     margin: 60vh auto 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .primary_button {
+    width: auto;
+  }
+  .secondary_button {
+    width: auto;
   }
 }
