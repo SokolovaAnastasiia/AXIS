@@ -126,6 +126,10 @@ h2 {
   }
   .message-box {
     display: flex;
+    position: fixed;
+    bottom: 2vh;
+    right: 0px;
+    left: 0px;
   }
 
   .send-button {
@@ -140,6 +144,10 @@ h2 {
   }
   .next-button {
     /* display: flex; */
+    position: fixed;
+    bottom: 2vh;
+    right: 1vh;
+    left: 1vh;
   }
   h2 {
     margin: 3vh 0 1vh;
