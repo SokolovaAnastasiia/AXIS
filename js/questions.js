@@ -223,30 +223,47 @@ let q = [];
 // console.log(mes_height);
 // $('.messages').height(mes_height);
 
-
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
   $('.question .text').html(q[0]);
 
   function nextQuestion(new_page){
     new_page = Number(sessionStorage.getItem("question")) + 1;
+
     switch (new_page) {
       case 2:
+        $('.question .text').animate({'opacity': 0}, 400);
+
         $('.slider-item:nth-child(2)').addClass('slider-item_selected');
-        $('.question .text').html(q[1]);
+        sleep(500).then(() => {
+          $('.question .text').html(q[1]).animate({'opacity': 1}, 500);
+        });
         break;
       case 3:
+        $('.question .text').animate({'opacity': 0}, 400);
         $('.slider-item:nth-child(2)').next().addClass('slider-item_selected');
-        $('.question .text').html(q[2]);
+        sleep(500).then(() => {
+          $('.question .text').html(q[2]).animate({'opacity': 1}, 500);
+        });
         break;
       case 4:
+        $('.question .text').animate({'opacity': 0}, 400);
         $('.slider-item:nth-child(2)').next().next().addClass('slider-item_selected');
-        $('.question .text').html(q[3]);
+        sleep(500).then(() => {
+          $('.question .text').html(q[3]).animate({'opacity': 1}, 500);
+        });
         break;
       case 5:
+        $('.question .text').animate({'opacity': 0}, 400);
         $('.slider-item:nth-child(2)').next().next().next().addClass('slider-item_selected');
-        $('.question .text').html(q[4]);
+        sleep(500).then(() => {
+          $('.question .text').html(q[4]).animate({'opacity': 1}, 500);
+        });
         break;
       case 6:
+
         $('.primary_button').css('display', 'block');
         $('.secondary_button').css('display', 'none');
         if ($(window).width() < 414) {
