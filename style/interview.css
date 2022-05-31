@@ -150,7 +150,7 @@ h2 {
     left: 1vh;
   }
   h2 {
-    margin: 3vh 0 1vh;
+    margin: 22px 0 10px;
     text-align: left;
   }
   .buttons {
@@ -160,10 +160,10 @@ h2 {
     bottom: -3vh;
   }
   .caption {
-    margin: 1vh 1vw 1vh;
+    margin: 0px 1vw 0px;
   }
   .slider {
-    margin-top: 0.5vh;
+    margin-top: 4px;
   }
   .br {
     display: revert;
@@ -211,7 +211,9 @@ h2 {
   }
   .messages {
     display: flex;
-    bottom: 92px;
+    position: relative;
+    top: 10px;
+    padding-left: 0;
   }
 
 }
