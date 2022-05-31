@@ -304,3 +304,13 @@ h3 {
     background-image: url('../images/more-white.svg') !important;
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  .primary_button {
+    width: auto;
+  }
+  .secondary_button {
+    width: auto;
+  }
+}

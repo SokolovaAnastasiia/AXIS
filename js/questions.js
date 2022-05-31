@@ -266,7 +266,7 @@ function sleep(ms) {
 
         $('.primary_button').css('display', 'block');
         $('.secondary_button').css('display', 'none');
-        if ($(window).width() < 414) {
+        if ($(window).width() < 500) {
           $('.message-input').css('display', 'none');
           $('.primary_button').css('display', 'flex');
           $('.add-more').css('display', 'block');
@@ -276,7 +276,7 @@ function sleep(ms) {
       default:
         $('.primary_button').css('display', 'block');
         $('.secondary_button').css('display', 'none');
-        if ($(window).width() < 414) {
+        if ($(window).width() < 500) {
           $('.message-input').css('display', 'none');
           $('.primary_button').css('display', 'flex');
           $('.add-more').css('display', 'block');
