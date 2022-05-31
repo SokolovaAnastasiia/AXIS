@@ -269,6 +269,9 @@ h3 {
 
     top: 0px;
   }
+  .container {
+    overflow: hidden;
+  }
   .caption {
     /* display: block;
     margin-top: 5px; */
