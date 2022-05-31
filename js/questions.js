@@ -234,7 +234,7 @@ function changeHeight() {
   let h = $('.question').height();
   let h2 = $(document).height();
   if ($(window).width() > 500) {
-    h = h + 154;
+    h = h + 144;
     h2 = (h2 - h) - 100;
   }
   else {
@@ -302,12 +302,15 @@ function sleep(ms) {
       case 6:
         $('.primary_button').css('display', 'block');
         $('.secondary_button').css('display', 'none');
-        $('.messages').css('padding-top', 30 + 'px');
+
         if ($(window).width() < 500) {
           $('.message-input').css('display', 'none');
           $('.primary_button').css('display', 'flex');
           $('.add-more').css('display', 'block');
           $('.send-it').css('display', 'none');
+          if ($(".messages").prop('scrollHeight') > $(".messages").height() ) {
+            $('.messages').css('padding-top', 30 + 'px');
+          }
         }
         break;
       default:
