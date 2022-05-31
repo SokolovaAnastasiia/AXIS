@@ -47,12 +47,15 @@ $(document).ready(function(){
     $( '.level' ).addClass( "level-white" );
     $( '.question' ).addClass( "question-white" );
     $(".skip_or_not_head").attr("src","../images/intro_head_white.svg");
-
+    $(".restart-img").attr("src","../images/restart_white.svg");
 
 
   }
   else {
     console.log('Black mode');
   }
+
+
+
 
 })
