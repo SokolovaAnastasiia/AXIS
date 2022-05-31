@@ -72,8 +72,10 @@
   overflow: auto;
   margin-bottom: 1vh;
   max-height: 77vh; */
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  -webkit-justify-content: end;
   justify-content: end;
   box-sizing: border-box;
   padding-left: 2vw;
@@ -98,6 +100,7 @@
   padding: 8.5px 16px 8.5px 16px;
   max-width: 650px;
   width: fit-content;
+  word-wrap: break-word;
 }
 
 /* .message:first-child {
