@@ -75,8 +75,6 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  -webkit-justify-content: end;
-  justify-content: end;
   box-sizing: border-box;
   padding-left: 2vw;
   overflow: auto;

@@ -186,6 +186,10 @@ level4 = [
 
 let q = [];
 
+
+
+
+
   sessionStorage.setItem("question","1");
 
   switch (sessionStorage.getItem("level")) {
@@ -194,6 +198,7 @@ let q = [];
       q = level1.sort(() => Math.random() - Math.random()).slice(0, 5);
       $('.level').html('01 —  DNA');
       $('.caption').html('01 —  DNA');
+
       break;
     case '2':
       $(".primary_button a").attr("href", "level3.html");
@@ -223,6 +228,14 @@ let q = [];
 // console.log(mes_height);
 // $('.messages').height(mes_height);
 
+
+
+function changeHeight() {
+  let h = $('.question').height();
+  h = h + 97;
+  $('.messages').css('top', h + 'px');
+}
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -239,13 +252,17 @@ function sleep(ms) {
         $('.slider-item:nth-child(2)').addClass('slider-item_selected');
         sleep(500).then(() => {
           $('.question .text').html(q[1]).animate({'opacity': 1}, 500);
+          changeHeight();
         });
+
+
         break;
       case 3:
         $('.question .text').animate({'opacity': 0}, 400);
         $('.slider-item:nth-child(2)').next().addClass('slider-item_selected');
         sleep(500).then(() => {
           $('.question .text').html(q[2]).animate({'opacity': 1}, 500);
+          changeHeight();
         });
         break;
       case 4:
@@ -253,6 +270,7 @@ function sleep(ms) {
         $('.slider-item:nth-child(2)').next().next().addClass('slider-item_selected');
         sleep(500).then(() => {
           $('.question .text').html(q[3]).animate({'opacity': 1}, 500);
+          changeHeight();
         });
         break;
       case 5:
@@ -260,10 +278,10 @@ function sleep(ms) {
         $('.slider-item:nth-child(2)').next().next().next().addClass('slider-item_selected');
         sleep(500).then(() => {
           $('.question .text').html(q[4]).animate({'opacity': 1}, 500);
+          changeHeight();
         });
         break;
       case 6:
-
         $('.primary_button').css('display', 'block');
         $('.secondary_button').css('display', 'none');
         if ($(window).width() < 500) {
