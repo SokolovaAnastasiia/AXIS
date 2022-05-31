@@ -11,11 +11,11 @@ $(document).ready(function(){
     }
   }, 1000)
 
-  document.addEventListener('swiped', function(e) {
-      console.log(e.target); // the element that was swiped
-      console.log(e.detail.dir);
-      alert('wefwfe') // swiped direction
-  });
+  // document.addEventListener('swiped', function(e) {
+  //     console.log(e.target); // the element that was swiped
+  //     console.log(e.detail.dir);
+  //     alert('wefwfe') // swiped direction
+  // });
 
   var swiper = new Swiper('.swiper-container', {
     scrollbar: {
@@ -30,9 +30,9 @@ $(document).ready(function(){
     $('.send-button-mobile').css("display", "none");
   }
 
-  $('body').bind('htmlchanged', function (e, data) {
-      alert('hi')
-  });
+  // $('body').bind('htmlchanged', function (e, data) {
+  //     alert('hi')
+  // });
 
   if (sessionStorage.getItem("mode") == 'white') {
     console.log('White mode');
@@ -167,6 +167,60 @@ $(document).ready(function(){
     sessionStorage.setItem("onboarding",new_slide);
     changeLook(sessionStorage.getItem("onboarding"));
   })
+
+  $( ".send-button-mobile" ).click(function() {
+    let new_slide = parseInt(sessionStorage.getItem("onboarding")) + 1;
+    sessionStorage.setItem("onboarding",new_slide);
+    changeLook_mobile();
+  });
+
+  let new_width = parseInt($( document ).width());
+  let new_width_scroll = $('.swiper-scrollbar').width() / 5;
+  console.log(new_width);
+
+  function changeLook_mobile(){
+    switch (sessionStorage.getItem("onboarding")) {
+      case '2':
+        $('.swiper-slide:nth-child(1)').addClass('swiper-slide-prev');
+        $('.swiper-slide:nth-child(2)').addClass('swiper-slide-active');
+        $('.swiper-slide:nth-child(3)').addClass('swiper-slide-next');
+        console.log('case 2');
+        new_width = new_width * (-1);
+        console.log(new_width);
+        $('.swiper-wrapper').css('transform', 'translate3d(' + new_width + 'px, 0px, 0px)');
+        $('.swiper-scrollbar-drag').css('transform', 'translate3d(' + new_width_scroll + 'px, 0px, 0px)');
+        break;
+      case '3':
+        $('.swiper-slide:nth-child(2)').addClass('swiper-slide-prev');
+        $('.swiper-slide:nth-child(3)').addClass('swiper-slide-active');
+        $('.swiper-slide:nth-child(4)').addClass('swiper-slide-next');
+        console.log('case 3');
+        new_width = (new_width + new_width);
+        console.log(new_width);
+        $('.swiper-wrapper').css('transform', 'translate3d(' + new_width + 'px, 0px, 0px)');
+        $('.swiper-scrollbar-drag').css('transform', 'translate3d(' + new_width_scroll * 2 + 'px, 0px, 0px)');
+        break;
+      case '4':
+        $('.swiper-slide:nth-child(3)').addClass('swiper-slide-prev');
+        $('.swiper-slide:nth-child(4)').addClass('swiper-slide-active');
+        $('.swiper-slide:nth-child(5)').addClass('swiper-slide-next');
+        console.log('case 4');
+        new_width = (new_width + new_width / 2);
+        $('.swiper-wrapper').css('transform', 'translate3d(' + new_width + 'px, 0px, 0px)');
+        $('.swiper-scrollbar-drag').css('transform', 'translate3d(' + new_width_scroll * 3 + 'px, 0px, 0px)');
+        break;
+      case '5':
+        $('.swiper-slide:nth-child(4)').addClass('swiper-slide-prev');
+        $('.swiper-slide:nth-child(5)').addClass('swiper-slide-active');
+        console.log('case 5');
+        new_width = new_width - parseInt($( document ).width());
+        $('.swiper-wrapper').css('transform', 'translate3d(' + new_width  + 'px, 0px, 0px)');
+        $('.swiper-scrollbar-drag').css('transform', 'translate3d(' + new_width_scroll * 4 + 'px, 0px, 0px)');
+        break;
+      default:
+
+    }
+  }
 
 
 })
