@@ -210,7 +210,8 @@ h2 {
     display: none !important;
   }
   .messages {
-    display: block;
+    display: flex;
+    bottom: 92px;
   }
 
 }
