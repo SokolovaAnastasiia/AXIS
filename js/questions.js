@@ -232,7 +232,12 @@ let q = [];
 
 function changeHeight() {
   let h = $('.question').height();
-  h = h + 97;
+  if ($(window).width() > 500) {
+    h = h + 177;
+  }
+  else {
+    h = h + 97;
+  }
   $('.messages').css('top', h + 'px');
 }
 
