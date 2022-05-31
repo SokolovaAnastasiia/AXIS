@@ -232,13 +232,26 @@ let q = [];
 
 function changeHeight() {
   let h = $('.question').height();
+  let h2 = $(document).height();
   if ($(window).width() > 500) {
-    h = h + 177;
+    h = h + 154;
+    h2 = (h2 - h) - 100;
   }
   else {
-    h = h + 97;
+    h = h + 94;
+    h2 = (h2 - h) - 90;
   }
-  $('.messages').css('top', h + 'px');
+
+  if ($(".messages").prop('scrollHeight') > $(".messages").height() ) {
+  	h = h - 30;
+    h2 = h2 + 30;
+    var d = $('.messages');
+    d.scrollTop(d.prop("scrollHeight"));
+  }
+
+  // $('.messages').css('top', h + 'px');
+  $('.messages').css('margin-top', h + 'px');
+  $('.messages').css('height', h2 + 'px');
 }
 
 function sleep(ms) {
@@ -255,7 +268,7 @@ function sleep(ms) {
         $('.question .text').animate({'opacity': 0}, 400);
 
         $('.slider-item:nth-child(2)').addClass('slider-item_selected');
-        sleep(500).then(() => {
+        sleep(100).then(() => {
           $('.question .text').html(q[1]).animate({'opacity': 1}, 500);
           changeHeight();
         });
@@ -289,6 +302,7 @@ function sleep(ms) {
       case 6:
         $('.primary_button').css('display', 'block');
         $('.secondary_button').css('display', 'none');
+        $('.messages').css('padding-top', 30 + 'px');
         if ($(window).width() < 500) {
           $('.message-input').css('display', 'none');
           $('.primary_button').css('display', 'flex');

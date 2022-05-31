@@ -84,6 +84,9 @@ h2 {
   margin: 20vh auto 0vh;
 }
 
+.slider {
+  top: 73px;
+}
 
 .chips {
   display: flex;
@@ -150,7 +153,7 @@ h2 {
     left: 1vh;
   }
   h2 {
-    margin: 22px 0 10px;
+    margin: 51px 0 10px;
     text-align: left;
   }
   .buttons {
@@ -164,6 +167,7 @@ h2 {
   }
   .slider {
     margin-top: 4px;
+    top: 33px;
   }
   .br {
     display: revert;
