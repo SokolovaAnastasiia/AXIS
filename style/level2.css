@@ -44,7 +44,7 @@
   background-image: url('../images/array-black.svg');
 }
 
-.game-text-desktop {
+/* .game-text-desktop {
   margin: 4vh auto;
   display: none;
   transition: 0.3s;
@@ -55,4 +55,4 @@
   .game-text-desktop {
     transform: scale(0.8);
   }
-}
+} */

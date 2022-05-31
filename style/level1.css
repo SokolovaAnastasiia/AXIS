@@ -44,15 +44,21 @@
   background-image: url('../images/array-black.svg');
 }
 
-.game-text-desktop {
-  margin: 4vh auto;
+/* .game-text-desktop {
   display: none;
   transition: 0.3s;
+
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 3vh;
 }
 
 
 @media screen and (max-width: 790px) {
   .game-text-desktop {
-    transform: scale(0.8);
+    display: block;
+    transform: translateX(-50%) scale(0.8);
   }
-}
+} */

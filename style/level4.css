@@ -43,7 +43,7 @@
 .corner_white > .array {
   background-image: url('../images/array-black.svg');
 }
-
+/* 
 .game-text-desktop {
   margin: 4vh auto;
   display: none;
@@ -55,4 +55,4 @@
   .game-text-desktop {
     transform: scale(0.8);
   }
-}
+} */
